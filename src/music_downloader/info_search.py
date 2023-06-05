@@ -17,3 +17,10 @@ class info_search(ABC):
         Result: Return all the information about the song
         """
         search = VideosSearch(description,limit=1).result()
+        return search
+    
+    @staticmethod
+    def get_link(data):
+        result = data["result"][0].get("link")
+        return result
+    
