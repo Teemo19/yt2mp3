@@ -23,4 +23,3 @@ class info_search(ABC):
     def get_link(data):
         result = data["result"][0].get("link")
         return result
-    
