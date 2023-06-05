@@ -1,4 +1,4 @@
 ffmpeg.exe
 ffplay.exe
 ffprobe.exe
-src\music_downloader\__pycache__
+src/*/__pycache__
