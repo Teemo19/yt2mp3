@@ -8,7 +8,12 @@ ZERO = 0
 
 class info_search(ABC):
     @staticmethod
-    def search_link():
-        search = VideosSearch(["result"][ZERO].get("title"))
-        
-    
+    def song_info(description):
+        """
+        Input: Name of the song
+
+        Process: Check the name of the song
+
+        Result: Return all the information about the song
+        """
+        search = VideosSearch(description,limit=1).result()
