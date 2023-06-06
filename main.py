@@ -30,7 +30,7 @@ def mp3(message):
     yt = Youtube()
 
     if not directory.verifyDirectoryExist(f"music/{title}.mp3"):
-        yt.download_mp3(link)
+        yt.download_mp3(link,title)
     audio = open(f"music/{title}.mp3",'rb')
     try:
         bot.reply_to(message,f"enviando {title}")
