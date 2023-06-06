@@ -3,6 +3,7 @@
 # Linkedin: https://www.linkedin.com/in/alejandro-maldonado-a9a908148/
 from abc import ABC
 from youtubesearchpython import VideosSearch
+import re
 
 ZERO = 0
 
@@ -21,16 +22,17 @@ class info_search(ABC):
     
     @staticmethod
     def get_link(data):
-        result = data["result"][0].get("link")
+        result = data["result"][ZERO].get("link")
         return result
     
     @staticmethod
     def get_title(data):
-        result = data["result"][0].get("title")
+        title = data["result"][ZERO].get("title")
+        result = re.sub('[/,#,|,*,],:,",(,),]',"",title)
         return result
     
     @staticmethod
     def get_artist(data):
-        result = data["result"][0].get("artist")
+        result = data["result"][ZERO].get("artist")
         return result
     
