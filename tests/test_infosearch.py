@@ -1,5 +1,5 @@
 import unittest
-from code import info_search
+from code.info_search import info_search
 
 class TestInfoSearch(unittest.TestCase):
     def test_song_info(self):
