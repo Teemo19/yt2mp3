@@ -1,4 +1,4 @@
-# yt2mp3
+# yt2mp3  - A mp3 downloader using telegram bot
 
 ## Download this files from internet
 ### ffmpeg.exe
