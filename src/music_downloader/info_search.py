@@ -28,7 +28,7 @@ class info_search(ABC):
     @staticmethod
     def get_title(data):
         title = data["result"][ZERO].get("title")
-        result = re.sub('[/,#,|,*,],:,",(,),]',"",title)
+        result = re.sub('[/,#,|,*,],:,",(,),],',"",title)
         return result
     
     @staticmethod
