@@ -25,7 +25,7 @@ class info_search(ABC):
         return result
     
     @staticmethod
-    def get_artist(data):
+    def get_title(data):
         result = data["result"][0].get("title")
         return result
     
