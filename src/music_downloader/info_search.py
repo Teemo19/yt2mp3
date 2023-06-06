@@ -23,3 +23,14 @@ class info_search(ABC):
     def get_link(data):
         result = data["result"][0].get("link")
         return result
+    
+    @staticmethod
+    def get_title(data):
+        result = data["result"][0].get("title")
+        return result
+    
+    @staticmethod
+    def get_artist(data):
+        result = data["result"][0].get("artist")
+        return result
+    
